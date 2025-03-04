@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Сайт с меню</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Стили для меню */
+        .menu-style {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .uk-navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .uk-navbar-nav li {
+            margin: 0 15px;
+        }
+
+        .uk-navbar-nav li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 8px 12px;
+            transition: all 0.3s ease;
+        }
+
+        .uk-navbar-nav li a:hover {
+            color: #fff;
+            background-color: #0077cc;
+            border-radius: 4px;
+        }
+
+        .uk-active a {
+            color: #fff;
+            background-color: #005bb5;
+            border-radius: 4px;
+        }
+
+        .uk-icon-home {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .uk-navbar-nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .uk-navbar-nav li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="menu-style">
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li class="uk-active">
+            <a href="https://www.satr.kz/"><i class="fas fa-home"></i> Главная</a>
+        </li>
+        <li>
+            <a href="http://daru.kz/" target="_blank" rel="noopener noreferrer">ғалым тор дүкені</a>
+        </li>
+        <li>
+            <a href="/uslugi-kz">қызмет</a>
+        </li>
+        <li>
+            <a href="/katalog-tovarov-kz-new1">товар түрлері</a>
+        </li>
+        <li>
+            <a href="/service-kz">Сервис орталығы</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
